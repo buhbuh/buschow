@@ -18,8 +18,8 @@
 header {
     position:absolute;
     top: 40px;
-    right: 40px;
-    text-align:center; 
+    right: 0;
+    text-align:right; 
     font-family: 'Arvo', serif;
     
     color: #252525;
@@ -27,7 +27,11 @@ header {
         -1px -1px 0 #fff,
         1px -1px 0  #fff,
         -1px 1px 0  #fff,
-        1px 1px 0   #fff;  
+        1px 1px 0   #fff;
+        
+    background:rgba(60, 66, 87, 0.5);
+    width:100%;
+    padding-right:40px;
 }
 
 @media (min-width: 600px) {
