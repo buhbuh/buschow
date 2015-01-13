@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Buschow</title>
+    <link href='http://fonts.googleapis.com/css?family=Arvo:700' rel='stylesheet' type='text/css'>
+    <link href="site.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <h1>Studio Buschow</h1>
+        <p>Site coming soon</p>
+    </header>
+	<div class="slideshow">
+        <div style="background-image:url('http://fc05.deviantart.net/fs70/f/2010/227/5/7/Architecture_Design_by_Fajrul19.jpg')"></div>
+        <div style="background-image:url('http://th01.deviantart.net/fs22/PRE/f/2008/022/a/1/retromodern_orange_living_room_by_zigshot82.jpg')"></div>
+	</div>
+</div>
+
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script>
+document.createElement('header');
+$(function(){
+
+    function slide() {
+        $(".slideshow div:eq(0)").animate({width:"0"}, 600, function() {
+            $(this).appendTo($(".slideshow")).css({width:"50%"});
+        });
+    }
+    
+    setInterval(slide, 5000);
+})
+</script>
+
+</body>
+</html>

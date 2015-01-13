@@ -1,0 +1,48 @@
+﻿html, body, .wrapper, .slideshow, .slideshow div {
+    height: 100%; 
+    width:100%; 
+    margin:0;  
+    overflow:hidden; 
+    
+}
+.slideshow {
+    width:200%;
+}
+.slideshow div { 
+    float:left;
+    width:50%;
+    background-size: cover;
+    background-position-x:center;
+    background-position-y:center; 
+}
+header {
+    position:absolute;
+    top: 40px;
+    right: 40px;
+    text-align:center; 
+    font-family: 'Arvo', serif;
+    
+    color: #252525;
+    text-shadow:
+        -1px -1px 0 #fff,
+        1px -1px 0  #fff,
+        -1px 1px 0  #fff,
+        1px 1px 0   #fff;  
+}
+
+@media (min-width: 600px) {
+    body {
+        font-size: 35px;
+    }
+}
+
+@media (min-width: 900px) {
+    body {
+        font-size: 55px;
+    }
+}
+
+h1 {
+    font-size: 1.8em;
+    margin-top:0;
+}

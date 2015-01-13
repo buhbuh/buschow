@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epsom Software</title>
+    <link href='http://fonts.googleapis.com/css?family=Arvo:700' rel='stylesheet' type='text/css'>
+    <link href="site.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="image"></div>
+    <div>
+        <h1>Studio Buschow</h1>
+        <p>Site coming soon</p>
+    </div>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+    
+        
+    $(function() {
+    
+        var i = 0,
+            images = [
+                'http://fc05.deviantart.net/fs70/f/2010/227/5/7/Architecture_Design_by_Fajrul19.jpg',
+                'http://th01.deviantart.net/fs22/PRE/f/2008/022/a/1/retromodern_orange_living_room_by_zigshot82.jpg',
+            ],
+            $image = $(".image");
+        
+        function swapImage(){
+            $image.fadeOut(function() {
+                $image.css("background-image", "url('" + images[i++] + "')").fadeIn();
+            });
+        }
+        swapImage();
+        setInterval(swapImage, 4000);
+    });
+    </script>
+    -->
+</body>
+</html>
